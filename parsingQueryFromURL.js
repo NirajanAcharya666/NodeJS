@@ -27,7 +27,7 @@ return output;
 
 const server = http.createServer((request, response) => {
 
-    let {query, pathname:path} = url.parse(request.url);
+    let {query, pathname: path} = url.parse(request.url, true)
     // console.log(x);
     if (path == '/' || path.toLocaleLowerCase() == '/home') {
         //set header and staus as well custom header 
@@ -78,3 +78,5 @@ const server = http.createServer((request, response) => {
 server.listen(8000, '127.0.0.1', () => {
     console.log("server is listening to the port 8000");
 })
+
+
