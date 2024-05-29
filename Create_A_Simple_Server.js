@@ -10,7 +10,7 @@ const server = http.createServer((request,response)=>{
     console.log("server is created");
     // to print the request type 
 
-    console.log(request);
+    console.log(request); 
 
 })
 

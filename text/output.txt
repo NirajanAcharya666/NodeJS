@@ -1,0 +1,4 @@
+This the writing synchronous file. 
+
+
+This the command for reading synchronous file . Date created Fri May 24 2024 09:51:45 GMT+0545 (Nepal Time)

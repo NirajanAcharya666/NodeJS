@@ -9,13 +9,13 @@ const html = fs.readFileSync('./index.html', "utf8");
 const server = http.createServer((request, response) => {
     let path = request.url;
     if (path == '/' || path.toLocaleLowerCase() == '/home') {
-        response.end("Hello, this is home");
+        response.end(html.replace('{{%CONTENT%}}',' You are in home page'));
     } else if (path.toLocaleLowerCase() == '/about') {
-        response.end("This is about")
+        response.end(html.replace('{{%CONTENT%}}',' You are in about page'))
     } else if (path.toLocaleLowerCase() == '/contact') {
-        response.end("you are in the contact page");
+        response.end(html.replace('{{%CONTENT%}}',' You are in contact page'));
     } else{
-        response.end('404 Error occured')
+        response.end(html.replace('{{%CONTENT%}}','404 error: Page Not Found'))
     }
 
 })

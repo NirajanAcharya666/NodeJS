@@ -1,0 +1,4 @@
+
+
+
+This the command for reading synchronous file 
